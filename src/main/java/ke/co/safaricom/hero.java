@@ -55,4 +55,5 @@ public class hero {
 
     private String weakness;
     private int id;
+
 }

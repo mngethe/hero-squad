@@ -4,6 +4,7 @@ import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Handler;
 
@@ -12,6 +13,14 @@ import static spark.Spark.*;
 public class Main {
     public static void main(String[] args) {
         staticFileLocation("/public");
+
+        get("/", (req, res)-> {
+            List<hero> heroes = dao.getALLHeroes();
+            Map<String, List<hero>> model = new HashMap<>();
+            model.put("heroes", heroes);
+            return new ModelAndView(model, "home.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
         get("/home.hbs", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
             return new ModelAndView(payload, "home.hbs.html");
