@@ -12,19 +12,34 @@ import static spark.Spark.*;
 public class Main {
     public static void main(String[] args) {
         staticFileLocation("/public");
-        get("/", (req, res)->{
+        get("/home.hbs", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
-           return new ModelAndView(payload,"home.hbs.html");
-       }, new HandlebarsTemplateEngine());
-
-        get("/login", (req, res)->{
-            Map<String, String> payload = new HashMap<>();
-            return new ModelAndView(payload,"hero-form.hbs.html");
+            return new ModelAndView(payload, "home.hbs.html");
         }, new HandlebarsTemplateEngine());
 
-        get("/login", (req, res)->{
+        get("/login", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
-            return new ModelAndView(payload,"squad-form.hbs.html");
+            return new ModelAndView(payload, "hero-form.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
+        get("/hero", (req, res)-> {
+            Map<String, String> payload = new HashMap<>();
+            return new ModelAndView(payload, "hero.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squad", (req, res)-> {
+            Map<String, String> payload = new HashMap<>();
+            return new ModelAndView(payload, "squad.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
+        get("/login", (req, res)-> {
+            Map<String, String> payload = new HashMap<>();
+            return new ModelAndView(payload, "squad-form.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squad", (req, res)-> {
+            Map<String, String> payload = new HashMap<>();
+            return new ModelAndView(payload, "success.hbs.html");
         }, new HandlebarsTemplateEngine());
 
         post("/hero", (req, res)->{
@@ -47,4 +62,5 @@ public class Main {
 
 
     }
+
 }
