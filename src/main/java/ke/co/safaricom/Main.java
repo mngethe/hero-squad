@@ -21,7 +21,7 @@ public class Main {
             return new ModelAndView(model, "home.hbs.html");
         }, new HandlebarsTemplateEngine());
 
-        get("/home.hbs", (req, res)-> {
+        get("/", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
             return new ModelAndView(payload, "home.hbs.html");
         }, new HandlebarsTemplateEngine());
@@ -31,12 +31,12 @@ public class Main {
             return new ModelAndView(payload, "hero-form.hbs.html");
         }, new HandlebarsTemplateEngine());
 
-        get("/hero", (req, res)-> {
+        get("/", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
             return new ModelAndView(payload, "hero.hbs.html");
         }, new HandlebarsTemplateEngine());
 
-        get("/squad", (req, res)-> {
+        get("/", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
             return new ModelAndView(payload, "squad.hbs.html");
         }, new HandlebarsTemplateEngine());
