@@ -1,15 +1,13 @@
 
-{{#partial "content"}}
+{{#partial "title"}}
  Home Page!
 {{/partial}}
-<section class="landing-pg">
-    <div class="land-left">
-    </div>
-    <div class="land-right">
-    </div>
+
+{{#partial "content"}}
+
     <h2> <a class="btn" href="/hero-form" >Create Your Hero</a> <br><br> CURRENT HEROES</h2>
     <div class="heroes">
-        {{#each hero}}
+
         <div class="hero-item">
             <p>Name: {{ name }} </p>
             <p>Age: {{ age }}</p>
@@ -20,9 +18,9 @@
             <a href="/squad" class="btn">Add {{ name }} To Squad</a>
         </div>
 
-        {{/each}}
+
     </div>
-</section>
+
 
 {{/partial}}
 
