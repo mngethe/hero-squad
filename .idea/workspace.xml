@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="30bd557b-1ba4-4fbd-a4c3-79bd86eedcaa" name="Changes" comment="commit all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ke/co/safaricom/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ke/co/safaricom/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hero-form.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/hero-form.hbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hero.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/hero.hbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/squad-form.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/squad-form.hbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/squad.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/squad.hbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.hbs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +131,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit all" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hero_squad$Main.ic" NAME="Main Coverage Results" MODIFIED="1690710393453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/hero_squad$Main.ic" NAME="Main Coverage Results" MODIFIED="1690710936559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ke.co.safaricom.*</FILTER>
     </SUITE>
   </component>
