@@ -26,15 +26,16 @@ public class Main {
             return new ModelAndView(payload, "home.hbs.html");
         }, new HandlebarsTemplateEngine());
 
+        get("/", (req, res)-> {
+            Map<String, String> payload = new HashMap<>();
+            return new ModelAndView(payload, "hero.hbs.html");
+        }, new HandlebarsTemplateEngine());
+
         get("/login", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
             return new ModelAndView(payload, "hero-form.hbs.html");
         }, new HandlebarsTemplateEngine());
 
-        get("/", (req, res)-> {
-            Map<String, String> payload = new HashMap<>();
-            return new ModelAndView(payload, "hero.hbs.html");
-        }, new HandlebarsTemplateEngine());
 
         get("/", (req, res)-> {
             Map<String, String> payload = new HashMap<>();
